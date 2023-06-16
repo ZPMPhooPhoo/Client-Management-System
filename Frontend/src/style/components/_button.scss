@@ -1,0 +1,23 @@
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.button{
+  width: 100px;
+  height: 40px;
+  background-color: #e96f28;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #f48e52;
+}
+.allbtn{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,29 @@
+# GROUP-III
+
+Our system named Client Management System is intented to be used in a Company's internal management for customers.
+
+Here are instructions
+#Backend
+npm install
+composer install
+Please create database named cms_db and run this command to seed all the data in database -> php artisan migrate:refresh --seed
+
+
+#Frontend
+npm install
+npm install -D sass
+npm install react-router-dom
+npm install axios
+
+#email and password for Login
+email => superadmin@gmail.com
+pwd => 12345678
+
+email => admin@gmail.com
+pwd => 12345678
+
+email => manager@gmail.com
+pwd => 12345678
+
+email => developer@gmail.com
+pwd => 12345678

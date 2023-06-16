@@ -1,0 +1,25 @@
+.pagination{
+    width: 100%;
+    padding: 10px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    button{
+        background: #fff;
+        border-radius: 8px;
+        padding: 8px 13px;
+        color: #e96f28;
+        font-size: 28x;
+        font-weight: 800;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    button:focus{
+        border: none;
+        outline: none;
+    }
+    button:disabled{
+        color: silver;
+        cursor: no-drop;
+    }
+}

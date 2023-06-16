@@ -1,0 +1,26 @@
+
+.registerBox{
+    width: 400px;
+    height: auto;
+    background-color: #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(34, 34, 34), 0 1px 25px 0 rgb(34, 34, 34);
+    margin: 50px auto;
+    padding: 0 20px 10px 20px;
+    input{
+        width: 100%;
+    }
+    .error-message{
+        margin-bottom: 10px;
+    }
+}
+
+.registerHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.resize{
+    width: 350px;
+    height: 110px;
+}

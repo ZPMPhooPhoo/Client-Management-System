@@ -1,0 +1,68 @@
+.register {
+    width: 80%;
+}
+
+.add-middle {
+    display: flex;
+    justify-content: center;
+}
+
+.main_client_create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid silver;
+    background-color: silver;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 1.1px;
+    }
+
+    .form-wrap {
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 0;
+
+    }
+}
+
+.client_phoneNO {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    .error-message {
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+
+}
+
+.client_phone_parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+
+    input {
+        width: 100%;
+        background-color: rgb(241, 241, 241);
+        padding: 6px 12px;
+        border: 2px solid silver;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+}

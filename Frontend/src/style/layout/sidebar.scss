@@ -1,0 +1,57 @@
+.sidebar-container {
+    color: #e96f28;
+    font-weight: 400;
+
+    ul {
+        li {
+            a {
+                display: block;
+                font-size: 16px;
+                font-weight: 700;
+                color: #e96f28;
+                margin: 0 25px 10px 25px;
+                border-radius: 8px;
+                padding: 12px;
+                background-image: linear-gradient(90deg, #d4d4d4 10%, #d4d4d4 80%);
+                transition: 0.3s all;
+            }
+
+            .active {
+                background-image: linear-gradient(20deg, rgb(206, 75, 0) 80%, rgba(233, 111, 40, 1) 10%);
+                color: #fff;
+
+            }
+        }
+
+        li a:hover {
+            background-image: linear-gradient(20deg, rgb(206, 75, 0) 80%, rgba(233, 111, 40, 1) 10%);
+            color: #fff;
+        }
+    }
+
+    .sidebar-logo {
+        width: 180px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .system-name {
+        font-size: 12px;
+        text-align: center;
+        color: #000;
+
+        h2 {
+            position: absolute;
+            left: 10%;
+            bottom: 5px;
+            font-weight: 700;
+            letter-spacing: 1.6px;
+            text-shadow: 1px 1px 3px rgb(95, 95, 95);
+        }
+    }
+}

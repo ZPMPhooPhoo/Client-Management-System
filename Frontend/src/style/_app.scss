@@ -1,0 +1,150 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #dddddd;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.pj-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 1000px;
+}
+
+.bar-div {
+    width: 20%;
+    height: 97vh;
+    background: radial-gradient(circle, rgba(191, 191, 191, 1) 19%, rgba(145, 141, 141, 1) 80%);
+    border: 1px solid #918d8d;
+    border-radius: 15px;
+    margin-top: 12px;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
+    position: relative;
+}
+
+.board-div {
+    width: 100%;
+    margin: 35px 25px 0;
+}
+
+.close {
+    display: none;
+    transform: translateX(-240px);
+
+}
+
+.update {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.download {
+    color: blueviolet;
+}
+
+.down-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 8px;
+
+    i {
+        font-size: 20px;
+    }
+}
+
+#root {
+    position: relative;
+
+    .l-width {
+        z-index: 9999;
+        position: absolute;
+        width: 120vw;
+        height: 140vh;
+        background-color: silver;
+        margin-left: -450px;
+        margin-top: -250px;
+    }
+
+    .c-width {
+        z-index: 9999;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: silver;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 8px solid white;
+        border-top-color: #e96f28;
+        animation: loadingAnimation 1s linear infinite;
+    }
+
+    &::after {
+        width: 80px;
+        height: 80px;
+        border-width: 6px;
+        border-top-color: transparent;
+        border-right-color: #e96f28;
+        animation: loadingAnimation 0.8s linear infinite reverse;
+    }
+
+    @keyframes loadingAnimation {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.error {
+    color: red;
+}

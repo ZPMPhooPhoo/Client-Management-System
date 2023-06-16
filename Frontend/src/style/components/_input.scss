@@ -1,0 +1,88 @@
+// .input {
+//   border: none;
+//     border-bottom: 2px solid map-get($colors, 'text');
+//     // border-left: 2px solid map-get($colors, 'text');
+//     outline: none;
+//     background: map-get($colors, 'light');
+//     padding: 20px 0 10px 0;
+//     margin-bottom: 25px;
+//     width: 300px;
+//     height: 40px;
+//     outline: none;
+//     background-color: transparent;
+//   }
+//   input::placeholder {
+//     color: #999;
+//     transition: 0.3s ease-out;
+//     // transform: translateY(20px);
+//   }
+  
+//   input:focus::placeholder {
+//     transform: translateY(-15px);
+//     color: #007bff;
+//   }
+
+
+// input:focus::placeholder,
+// input:not(:placeholder-shown)::placeholder {
+//   transform: translateY(-15px);
+//   color: #007bff;
+// }
+
+
+
+.input {
+  border: none;
+  border-bottom: 2px solid map-get($colors, 'text');
+  outline: none;
+  background: map-get($colors, 'light');
+  padding: 20px 0 10px 0;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: #999;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+input:focus::placeholder {
+  color: map-get($colors, 'primary');
+  transform: translateY(-15px);
+  font-size: 12px;
+  background-color: transparent;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  height: 70px;
+  padding: 12px;
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: rgb(241, 241, 241);
+  resize: vertical;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.textarea::placeholder {
+  color: #999;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+  font-family: 'Manrope', sans-serif;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.textarea:focus::placeholder {
+  color: map-get($colors, 'primary');
+  transform: translateY(-15px);
+  font-size: 12px;
+}

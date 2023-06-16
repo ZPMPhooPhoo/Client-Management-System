@@ -1,0 +1,121 @@
+.login-form {
+    width: 800px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.input-wrap {
+    width: 90%;
+    margin: 0 auto;
+
+    input {
+        width: 100%;
+    }
+}
+
+.login-form-row {
+    display: flex;
+    box-shadow: 0 1px 3px 0 rgb(34, 34, 34), 0 1px 25px 0 rgb(34, 34, 34);
+}
+
+.left-col {
+    width: 50%;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.left-col-content {
+    padding: 50px 20px;
+    color: #ffffff;
+}
+
+.left-col-content h1 {
+    text-decoration: none;
+    color: #e96f28;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left-col-content p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.right-col {
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.right-col-content {
+    padding: 50px 0px;
+}
+
+.from-title {
+    h1 {
+        text-transform: capitalize;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        color: #e96f28;
+    }
+
+    i {
+        font-size: 50px;
+        color: map-get($colors , 'primary');
+        display: block;
+        text-align: center;
+    }
+}
+
+.form {
+    padding-top: 40px;
+
+    p {
+        text-align: center;
+
+        a {
+            font-weight: 700;
+        }
+    }
+}
+
+.form button {
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 150px;
+    color: #ffffff;
+    background-color: #e96f28;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-form {
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .left-col {
+        display: none;
+    }
+
+    .right-col {
+        width: 100%;
+    }
+}
+
+.error-message {
+    color: red;
+    display: flex;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+}

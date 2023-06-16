@@ -1,0 +1,141 @@
+table {
+    background: silver;
+}
+
+.table-wrap {
+    .table-bar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .add-btn-wrap {
+            margin: 0 2px 10px 0;
+
+            button {
+                padding: 10px 22px;
+                font-size: 13px;
+                border: none;
+                background: #e96f28;
+                color: #fff;
+                border-radius: 3px;
+                box-shadow: 1px 1px 3px #b14f16;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out;
+
+                i {
+                    padding-right: 10px;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+
+            button:hover {
+                background-color: #c95c1e;
+            }
+        }
+    }
+}
+
+.pj-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+
+    .table-header {
+        background-color: #e96f28;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    th,
+    td {
+        word-break: break-all;
+        width: 150px;
+    }
+
+
+    th {
+        padding: 25px 2px;
+    }
+
+    td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 15px 2px;
+    }
+
+    .client-name {
+        padding: 0 50px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    .list-header {
+        text-align: center;
+    }
+
+    tr {
+        transition: 0.4s all ease-in-out;
+    }
+
+    td {
+        .link {
+            display: block;
+            padding: 9px;
+            background: #e96f28;
+            color: #fff;
+            border-radius: 5px;
+            transition: 0.5s background-color ease;
+        }
+
+        i {
+            font-size: 20px;
+            padding: 2px;
+            margin: 5px;
+            transition: 0.5s color ease;
+        }
+
+        .link:hover {
+            background-color: #e05200;
+        }
+    }
+
+    .td-category {
+        span {
+            background: #287e00;
+            border-radius: 8px;
+            padding: 5px;
+            margin: 2px;
+            color: #fff;
+        }
+    }
+
+    .update {
+        color: green;
+    }
+
+    .update:hover {
+        color: rgb(0, 192, 0);
+    }
+
+    .delete {
+        color: rgb(167, 0, 0);
+    }
+
+    .delete:hover {
+        color: rgb(252, 4, 4);
+    }
+
+    .more {
+        color: #e96f28;
+    }
+
+    .more:hover {
+        color: orange;
+    }
+}

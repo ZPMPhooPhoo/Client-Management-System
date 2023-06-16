@@ -1,0 +1,97 @@
+.dashboard-container {
+    margin-left: 26px;
+
+    .card-container {
+        .client-card {
+            position: relative;
+            width: 260px;
+            background: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgb(71, 71, 71);
+            color: #000;
+            font-weight: 400;
+            padding: 15px;
+            margin: 17px 7px 20px 0;
+
+            .client-card-header {
+                .client-card-logo {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10%;
+                    position: absolute;
+                    top: -18%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                .client-card-title {
+                    h2 {
+                        margin-top: 30px;
+                        text-align: center;
+                    }
+
+                    h2::after {
+                        content: '';
+                        display: block;
+                        width: 80%;
+                        height: 1px;
+                        background-color: #7c7c7c;
+                        margin: 10px auto 0 auto;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        padding: 10px 0;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .client-card-footer {
+                padding: 8px;
+
+                h3 {
+                    text-align: center;
+                }
+
+                span {
+                    font-weight: 700;
+                    color: green;
+                }
+            }
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-col {
+    color: #fff;
+}
+
+.card1 {
+    background: radial-gradient(circle, rgba(255, 116, 41, 1) 10%, rgba(210, 81, 0, 1) 80%);
+    box-shadow: 2px 2px 12px rgb(182, 82, 0);
+}
+
+.card2 {
+    background: radial-gradient(circle, rgba(124, 231, 46, 1) 19%, rgba(30, 161, 0, 1) 80%);
+    box-shadow: 2px 2px 12px rgb(0, 141, 24);
+}
+
+.card3 {
+    background: radial-gradient(circle, rgba(255, 242, 34, 1) 19%, rgba(214, 194, 1, 1) 80%);
+    box-shadow: 2px 2px 12px rgb(223, 208, 5);
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+}
